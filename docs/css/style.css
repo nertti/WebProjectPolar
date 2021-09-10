@@ -359,4 +359,13 @@ p {
   .container {
     width: calc(100% - 60px);
   }
+
+  .cards {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .cards .card {
+    margin-bottom: 40px;
+  }
 }
