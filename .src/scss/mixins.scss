@@ -1,0 +1,51 @@
+@mixin mobile-min {
+  @media screen and (max-width: 359px) {
+    @content;
+  }
+}
+// тут мои 369 ниже 360-575
+@mixin mobile {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin small-tablet {  //тут синяя полоска будет появляться!
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin tablet-vert { //1024
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin small-desktop-min {
+  @media screen and (max-width: 1220px) {
+    @content;
+  }
+}
+
+@mixin small-desktop {
+  @media screen and (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin medium-desktop {
+  @media screen and (max-width: 1630px) {
+    @content;
+  }
+}
+@mixin large-desktop {
+  @media screen and (max-width: 1750px) {
+    @content;
+  }
+}
