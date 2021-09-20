@@ -235,6 +235,9 @@ p{
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  @include small-tablet{
+    display: none;
+  }
   ul{
     padding: 0;
     margin: 22px 0;
@@ -243,6 +246,9 @@ p{
     text-decoration: none;
     justify-content: space-around;
     li{
+      @include tablet-vert{
+        font-size: 16px;
+      }
       font-size: 18px;
       padding: 10px 14px;
       font-family: 'Roboto', sans-serif;
@@ -259,6 +265,10 @@ p{
 .ice-block{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  @include tablet-vert{
+    justify-content: center;
+  }
   .cash{
     padding: 70px 0 0;
     .tit{
@@ -293,4 +303,12 @@ p{
 .revers{
   text-align: right;
   margin-left: auto;
+  @include tablet-vert{
+    text-align: left;
+    margin-left: 0;
+  }
+}
+.rev{
+  flex-wrap: wrap-reverse;
+
 }

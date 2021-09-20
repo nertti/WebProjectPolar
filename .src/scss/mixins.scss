@@ -10,8 +10,8 @@
   }
 }
 
-@mixin small-tablet {  //тут синяя полоска будет появляться!
-  @media screen and (max-width: 767px) {
+@mixin small-tablet {  //тут синяя полоска будет появляться! 767
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
