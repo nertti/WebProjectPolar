@@ -20,8 +20,22 @@ p{
 .head{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   img:hover{
     cursor: pointer;
+  }
+  .navi{
+    display: none;
+  }
+  @include small-tablet{
+    .navi{
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+    .but{
+      display: none;
+    }
   }
   .nav{
     max-width: 480px;
@@ -268,6 +282,16 @@ p{
   flex-wrap: wrap;
   @include tablet-vert{
     justify-content: center;
+  }
+  @include mobile{
+    img{
+      max-width: 375px;
+    }
+  }
+  @include mobile-min{
+    img{
+      max-width: 300px;
+    }
   }
   .cash{
     padding: 70px 0 0;
