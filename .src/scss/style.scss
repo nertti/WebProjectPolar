@@ -19,13 +19,16 @@ p{
 }
 .head{
   display: flex;
+  justify-content: space-between;
   img:hover{
     cursor: pointer;
   }
   .nav{
     max-width: 480px;
     width: 100%;
-    margin: 0 auto;
+    @include small-tablet{
+      display: none;
+    }
     ul{
       padding: 0;
       margin: 22px 0;
@@ -73,7 +76,10 @@ p{
   display: flex;
   padding: 140px 0;
   justify-content: space-between;
-
+  @include small-tablet{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
   .text{
     max-width: 700px;
     width: 100%;
@@ -103,7 +109,7 @@ p{
   padding: 70px 0;
   justify-content: space-around;
   @include small-desktop-min{
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
   }
   .card{
@@ -144,6 +150,18 @@ p{
   display: flex;
   padding: 40px 0;
   justify-content: space-between;
+  @include small-tablet{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    img{
+      width: 350px;
+    }
+  }
+  @include mobile-min{
+    img{
+      width: 300px;
+    }
+  }
   .text2{
     max-width: 500px;
     width: 100%;

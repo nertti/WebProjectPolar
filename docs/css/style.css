@@ -20,6 +20,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .head img:hover {
@@ -29,7 +32,6 @@ p {
 .head .nav {
   max-width: 480px;
   width: 100%;
-  margin: 0 auto;
 }
 
 .head .nav ul {
@@ -361,11 +363,43 @@ p {
   }
 
   .cards {
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
   }
 
   .cards .card {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .head .nav {
+    display: none;
+  }
+
+  .content {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .content2 {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .content2 img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .content2 img {
+    width: 300px;
   }
 }
