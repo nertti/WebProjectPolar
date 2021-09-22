@@ -8,6 +8,7 @@ html {
 p {
   margin: 0;
   color: #0F0101;
+  padding: 0;
 }
 
 .container {
@@ -281,6 +282,36 @@ p {
   font-weight: 600;
 }
 
+.nav_ice-drop {
+  display: none;
+  cursor: pointer;
+}
+
+.nav_ice-drop .drop-items {
+  display: none;
+  background-color: rgba(192, 192, 192, 0.72);
+}
+
+.nav_ice-drop .drop-items:hover {
+  display: block;
+}
+
+.nav_ice-drop .drop-items .drop-item {
+  border-bottom: 1px solid #d23166;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.nav_ice-drop .drop-items .drop-item:hover {
+  font-weight: 600;
+}
+
+.nav_ice-drop .drop-items .drop-item:last-child {
+  border-bottom: none;
+}
+
 .nav_ice {
   max-width: 1000px;
   width: 100%;
@@ -406,7 +437,7 @@ p {
 @media screen and (max-width: 768px) {
   .head .navi {
     display: block;
-    width: 50px;
+    width: 79px;
     height: 50px;
   }
 
@@ -436,6 +467,28 @@ p {
 
   .content2 img {
     width: 350px;
+  }
+
+  .product p.heading {
+    display: none;
+  }
+
+  .nav_ice-drop {
+    display: block;
+    width: 100%;
+    border: 1px solid #d23166;
+    border-radius: 10px;
+  }
+
+  .nav_ice-drop p {
+    font-family: "Hind Madurai", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .nav_ice-drop p:hover ~ .drop-items {
+    display: block;
   }
 
   .nav_ice {

@@ -31,7 +31,7 @@ p{
   @include small-tablet{
     .navi{
       display: block;
-      width: 50px;
+      width: 79px;
       height: 50px;
     }
     .but{
@@ -244,6 +244,52 @@ p{
     text-align: center;
     font-size: 44px;
     font-weight: 600;
+    @include small-tablet{
+      display: none;
+    }
+  }
+}
+.nav_ice-drop{
+  display: none;
+  cursor: pointer;
+
+  @include small-tablet{
+    display: block;
+    width: 100%;
+    border: 1px solid #d23166;
+    border-radius: 10px;
+    p{
+      font-family: 'Hind Madurai', sans-serif;
+      text-align: center;
+      font-size: 35px;
+      font-weight: 600;
+      &:hover ~ .drop-items{
+        display: block;
+      }
+    }
+  }
+
+  .drop-items{
+    &:hover{
+      display: block;
+    }
+    display: none;
+    background-color: rgba(192, 192, 192, 0.72);
+    //box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    .drop-item{
+      border-bottom: 1px solid #d23166;
+      max-width: calc(100% - 20px);
+      margin: 0 auto;
+      font-size: 25px;
+      font-weight: 500;
+      &:hover{
+        font-weight: 600;
+      }
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+
   }
 }
 .nav_ice{
