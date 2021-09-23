@@ -37,6 +37,36 @@ p {
   display: none;
 }
 
+.head .burger:hover + .nav_hidden {
+  left: 0;
+}
+
+.head .nav_hidden {
+  width: 320px;
+  min-width: 320px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  left: -360px;
+  padding: 15px 20px;
+  -webkit-transition: left 0.3s;
+  -o-transition: left 0.3s;
+  transition: left 0.3s;
+  background: #242424;
+  z-index: 2000;
+}
+
+.head .nav_hidden li {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 14px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
 .head .nav {
   max-width: 480px;
   width: 100%;
