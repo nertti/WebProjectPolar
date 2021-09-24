@@ -134,6 +134,9 @@ p{
       span{
         color: #d23166;
       }
+      @include mobile{
+        font-size: 40px;
+      }
     }
     .description{
       font-family: 'Hind Madurai', sans-serif;

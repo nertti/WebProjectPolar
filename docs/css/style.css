@@ -527,6 +527,10 @@ p {
 }
 
 @media screen and (max-width: 575px) {
+  .content .text .title2 {
+    font-size: 40px;
+  }
+
   .ice-block img {
     max-width: 375px;
   }
