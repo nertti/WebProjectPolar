@@ -50,7 +50,7 @@ p {
   bottom: 0;
   margin: 0;
   left: -360px;
-  padding: 15px 20px;
+  padding: 35px 20px;
   -webkit-transition: left 0.3s;
   -o-transition: left 0.3s;
   transition: left 0.3s;
@@ -58,10 +58,14 @@ p {
   z-index: 2000;
 }
 
+.head .nav_hidden img {
+  padding: 0 45px;
+}
+
 .head .nav_hidden li {
   list-style-type: none;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px 14px;
   font-family: "Roboto", sans-serif;
   color: #fff;
@@ -319,7 +323,7 @@ p {
 
 .nav_ice-drop .drop-items {
   display: none;
-  background-color: rgba(192, 192, 192, 0.72);
+  background-color: rgba(242, 206, 218, 0.4);
 }
 
 .nav_ice-drop .drop-items:hover {
@@ -485,6 +489,11 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 20px 0;
+  }
+
+  .cards {
+    padding: 20px 0;
   }
 
   .content2 {
@@ -493,6 +502,7 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 20px 0;
   }
 
   .content2 img {
@@ -528,7 +538,7 @@ p {
 
 @media screen and (max-width: 575px) {
   .content .text .title2 {
-    font-size: 40px;
+    font-size: 42px;
   }
 
   .ice-block img {
@@ -537,6 +547,10 @@ p {
 }
 
 @media screen and (max-width: 359px) {
+  .content .text .title2 {
+    font-size: 35px;
+  }
+
   .content2 img {
     width: 300px;
   }

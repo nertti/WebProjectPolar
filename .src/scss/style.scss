@@ -50,14 +50,17 @@ p{
     bottom: 0;
     margin: 0;
     left: -360px;
-    padding: 15px 20px;
+    padding: 35px 20px;
     transition: left 0.3s;
     background: rgb(36, 36, 36);
     z-index: 2000;
+    img{
+      padding: 0 45px;
+    }
     li{
       list-style-type: none;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 20px;
       padding: 10px 14px;
       font-family: 'Roboto', sans-serif;
       color: #fff;
@@ -117,9 +120,11 @@ p{
   display: flex;
   padding: 140px 0;
   justify-content: space-between;
+
   @include small-tablet{
     flex-wrap: wrap-reverse;
     justify-content: center;
+    padding: 20px 0;
   }
   .text{
     max-width: 700px;
@@ -135,7 +140,10 @@ p{
         color: #d23166;
       }
       @include mobile{
-        font-size: 40px;
+        font-size: 42px;
+      }
+      @include mobile-min{
+        font-size: 35px;
       }
     }
     .description{
@@ -152,6 +160,9 @@ p{
   flex-wrap: wrap;
   padding: 70px 0;
   justify-content: space-around;
+  @include small-tablet{
+    padding: 20px 0;
+  }
   @include small-desktop-min{
     max-width: 600px;
     margin: 0 auto;
@@ -197,6 +208,7 @@ p{
   @include small-tablet{
     flex-wrap: wrap-reverse;
     justify-content: center;
+    padding: 20px 0;
     img{
       width: 350px;
     }
@@ -281,7 +293,6 @@ p{
 .nav_ice-drop{
   display: none;
   cursor: pointer;
-
   @include small-tablet{
     display: block;
     width: 100%;
@@ -303,7 +314,7 @@ p{
       display: block;
     }
     display: none;
-    background-color: rgba(192, 192, 192, 0.72);
+    background-color: rgba(242, 206, 218, 0.4);
     //box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     .drop-item{
       border-bottom: 1px solid #d23166;
